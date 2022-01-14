@@ -32,6 +32,15 @@ const content =  {
       },
     },
     {
+      name:'WebbedOut',
+      role:"User Interface Developer",
+      span:"December 2021 - Present",
+      description:{
+        first:'WebbedOut is a freelance service that helps you created websites for your business/personal needs.',
+        second:'Working as a freelancer here who works on designing and coding the user interface!'
+      }
+    },
+    {
       name: "BarRaiser",
       role: "Software Engineer Intern",
       span: "July 2021 - November 2021",
