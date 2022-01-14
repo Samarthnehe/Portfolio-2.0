@@ -1,0 +1,32 @@
+.project-landing{
+    min-height:100vh;
+    height:auto;
+    width:100%;
+    box-sizing: border-box;
+    padding-top: 120px;
+    background-color:var(--background)
+}
+.project-container{
+    width:80%;
+    margin: 0 auto;
+    padding:80px 0px;
+
+}
+.projects-welcome{
+    width:240px;
+    background-color:rgba(136,96,208,0.3);
+    height:auto;
+    color:var(--primary);
+    padding: 15px 10px;
+    border-radius:5px;
+    text-align:center;
+    float: left;
+    margin-top: -57px;
+}
+.projects-welcome h1{
+    font-weight:700;
+    font-size:24px;
+    color:var(--primary);
+    line-height:24px
+
+}

@@ -1,0 +1,106 @@
+.about-me{
+    min-height: 100vh;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    background-color: var(--background);
+}
+.about-me-desc{
+    height: 75%;
+    background-color:var(--white);
+    width: 90%;
+    margin:0 auto;
+    border-radius:5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding:30px 5%;
+    box-sizing: border-box;
+}
+.para{
+    font-size:22px;
+    color:var(--text);
+    padding:10px 0px;
+    line-height: 1.25em;
+}
+.button{
+    background-color:var(--primary);
+    outline:none;
+    border:none;
+    padding:15px 20px;
+    width:200px;
+    border-radius:5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:var(--white);
+    font-weight: 500;
+    transition:all 0.3s ease-in-out;
+    font-size:22px;
+    margin: 15px 0px;
+    box-shadow: 0px 5px 8px rgba(136,96,208,0.45);
+    cursor: pointer;
+    text-decoration: none;
+}
+.button a{
+    text-decoration: none;
+}
+.button p{
+    transition: none;
+  
+    
+}
+.button:hover{
+    transform:scale(1.05);
+
+}
+
+.about-welcome{
+    width:240px;
+    background-color:rgba(136,96,208,0.3);
+    height:auto;
+    color:var(--primary);
+    padding: 15px 10px;
+    border-radius:5px;
+    text-align:center;
+    float: right;
+    margin-top: -57px;
+}
+.about-welcome h1{
+    font-weight:700;
+    font-size:24px;
+    color:var(--primary);
+    line-height:24px
+
+}
+
+@media only screen and (max-width: 800px){
+    .about-header{
+        font-size:36px !important
+    }
+    .para{
+        font-size: 18px !important;
+        text-align: center;
+    }
+    .about-me-desc{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction: column;
+    }
+    .about-me{
+        margin: 10vh 0px !important;
+       
+    }
+}
+
+
+@media only screen and (max-width: 1248px){
+    .para{
+        font-size:20px !important
+    }
+    .about-me{
+        margin: 10vh 0px !important;
+    }
+}
