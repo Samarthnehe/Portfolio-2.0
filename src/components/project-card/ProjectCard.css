@@ -5,7 +5,7 @@
     background-color: var(--white);
     height:auto;
     margin:60px 0px;
-    border:1px solid rgb(229,231,235)
+    border:1px solid var(--border);
 
 }
 .project-card:hover{

@@ -1,7 +1,8 @@
 import React from "react";
 import "./NavbarToggle.css";
 import CancelIcon from "@mui/icons-material/Cancel";
-import {Link} from 'react-router-dom'
+import {Link as Link1} from 'react-router-dom';
+import {Link as Link2} from 'react-scroll';
 
 function NavbarToggle() {
 
@@ -23,31 +24,29 @@ function NavbarToggle() {
       <div className="toggle-items">
         <div className="toggle__items">
         
-          <Link
+          <Link1
             to="/projects"
-            spy={true}
             onClick={() => handleToggleClose()}
-            smooth={true}
+            
           >
             Projects
-          </Link>
-          <Link
+          </Link1>
+          <Link1
             to="/experience"
-            spy={true}
             onClick={() => handleToggleClose()}
-            smooth={true}
+            
           >
             Experience
-          </Link>
+          </Link1>
    
-            <Link
+            <Link2
               to="contact"
               spy={true}
               smooth={true}
               onClick={() => handleToggleClose()}
             >
               Contact
-            </Link>
+            </Link2>
      
         </div>
       </div>

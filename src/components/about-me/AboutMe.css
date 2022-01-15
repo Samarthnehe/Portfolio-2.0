@@ -34,7 +34,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color:var(--white);
+    color:white;
     font-weight: 500;
     transition:all 0.3s ease-in-out;
     font-size:22px;
@@ -96,7 +96,7 @@
 }
 
 
-@media only screen and (max-width: 1248px){
+@media only screen and (min-width: 801px) and (max-width: 1248px){
     .para{
         font-size:20px !important
     }
