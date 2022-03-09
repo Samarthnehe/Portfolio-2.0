@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { Link as Link1 } from "react-router-dom";
 import { Link as Link2 } from "react-scroll";
@@ -16,11 +16,11 @@ function Navbar({ switchTheme, theme }) {
 
     SideBar.style.width = "80vw";
   };
-  const [currPage,setCurrPage] = useState('');
+  const [currPage, setCurrPage] = useState("");
 
-  const handleClick = (name) =>{
-      setCurrPage(name);
-  }
+  const handleClick = (name) => {
+    setCurrPage(name);
+  };
   console.log(currPage);
 
   return (
@@ -28,67 +28,72 @@ function Navbar({ switchTheme, theme }) {
       <NavbarToggle />
       <div className="navbar">
         {theme === "dark" ? (
-          <Link1 to="/" onClick={()=>handleClick("")}>
-            <img src={LogoDark} width="150px" height="60px" />
+          <Link1 to="/" onClick={() => handleClick("")}>
+            <img src={LogoDark} width="135px" height="55px" />
           </Link1>
         ) : (
-          <Link1 to="/" onClick={()=>handleClick("")}>
-            <img src={Logo} width="150px" height="60px" />
+          <Link1 to="/" onClick={() => handleClick("")}>
+            <img src={Logo} width="135px" height="55px" />
           </Link1>
         )}
         <div className="dark-toggle-mobile" onClick={switchTheme}>
-            {theme === "dark" ? (
-              <svg
-              style={{color:'white'}}
-                id="sun"
-                class="border-black"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <circle cx="12" cy="12" r="5"></circle>
-                <line x1="12" y1="1" x2="12" y2="3"></line>
-                <line x1="12" y1="21" x2="12" y2="23"></line>
-                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                <line x1="1" y1="12" x2="3" y2="12"></line>
-                <line x1="21" y1="12" x2="23" y2="12"></line>
-                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-              </svg>
-            ) : (
-              <svg
-              style={{color:'black'}}
-                id="moon"
-                class="border-white"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-              </svg>
-            )}
-          </div>
+          {theme === "dark" ? (
+            <svg
+              style={{ color: "white" }}
+              id="sun"
+              class="border-black"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          ) : (
+            <svg
+              style={{ color: "black" }}
+              id="moon"
+              class="border-white"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          )}
+        </div>
         <div className="toggle" onClick={() => handleToggle()}>
-          <MenuIcon fontSize="large" style={{ color: theme==='dark'?'rgb(240,240,240)':"rgb(30,30,30)" }} />
+          <MenuIcon
+            fontSize="large"
+            style={{
+              color: theme === "dark" ? "rgb(240,240,240)" : "rgb(30,30,30)",
+            }}
+          />
         </div>
 
         <div className="navbar-options">
           <Link1
             className={currPage === "projects" ? "active" : ""}
-            onClick={()=>handleClick("projects")}
+            onClick={() => handleClick("projects")}
             to="/projects"
           >
             <p
@@ -105,7 +110,7 @@ function Navbar({ switchTheme, theme }) {
           </Link1>
           <Link1
             className={currPage === "experience" ? "active" : ""}
-            onClick={()=>handleClick("experience")}
+            onClick={() => handleClick("experience")}
             to="/experience"
           >
             <p
@@ -141,7 +146,7 @@ function Navbar({ switchTheme, theme }) {
           <div className="dark-toggle" onClick={switchTheme}>
             {theme === "dark" ? (
               <svg
-              style={{color:'white'}}
+                style={{ color: "white" }}
                 id="sun"
                 class="border-black"
                 xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +171,7 @@ function Navbar({ switchTheme, theme }) {
               </svg>
             ) : (
               <svg
-              style={{color:'black'}}
+                style={{ color: "black" }}
                 id="moon"
                 class="border-white"
                 xmlns="http://www.w3.org/2000/svg"

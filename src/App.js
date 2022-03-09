@@ -21,7 +21,7 @@ function App() {
       <div className="App" data-theme={theme}>
         <Navbar switchTheme={switchTheme} theme={theme}/>
         <Routes>
-          <Route exact path="/" element={<Home/>}></Route>
+          <Route exact path="/" element={<Home theme={theme}/>}></Route>
         </Routes>
         <Routes>
           <Route exact path="/projects" element={<Projects/>}></Route>

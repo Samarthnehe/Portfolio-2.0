@@ -3,11 +3,11 @@
     width:0;
     overflow: hidden;
     background-color: var(--primary);
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 99999;
     transition: 0.3s all ease-in-out;
- 
+    
 }
 .toggle-cross{
     display: flex;
@@ -35,7 +35,7 @@
     padding:15px 0px;
     font-size:32px;
     font-weight: 700;
-    color: white;
+    color: var(--white);
     overflow: hidden;
     text-decoration: none;
 }

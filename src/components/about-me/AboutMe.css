@@ -22,7 +22,7 @@
     font-size:22px;
     color:var(--text);
     padding:10px 0px;
-    line-height: 1.25em;
+    line-height: 1.35em;
 }
 .button{
     background-color:var(--primary);

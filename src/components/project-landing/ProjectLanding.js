@@ -17,7 +17,7 @@ function ProjectLanding() {
               name={item.title}
               content={item.description}
               reverse={index%2}
-              link=""
+              link={item.link}
               idx={index}
             />
           );
