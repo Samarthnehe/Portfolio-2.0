@@ -29,6 +29,7 @@ const content = {
       name: "MakeMyTrip",
       role: "Software Engineer Intern",
       span: "January 2022 - Present",
+      link: "https://www.makemytrip.com/",
       image: MMT,
       description: {
         first:
@@ -41,6 +42,7 @@ const content = {
       name: "WebbedOut",
       role: "User Interface Developer",
       span: "December 2021 - Present",
+      link: "https://webbedout.devus.org/",
       image: WebbedoutLogo,
       description: {
         first:
@@ -53,6 +55,7 @@ const content = {
       name: "BarRaiser",
       role: "Software Engineer Intern",
       span: "July 2021 - November 2021",
+      link: "https://barraiser.com/in/home",
       image: BarRaiser,
       description: {
         first:
@@ -65,6 +68,7 @@ const content = {
       name: "Czarvision Technology",
       role: "Jr SharePoint Developer Intern",
       span: "February 2021 - April 2021",
+      link: "https://czarvision.com/",
       image: Czar,
       description: {
         first:
@@ -77,6 +81,7 @@ const content = {
       name: "The Sparks Foundation",
       role: "Web Developer and Design Intern",
       span: "March 2021 - April 2021",
+      link: "https://www.thesparksfoundationsingapore.org/",
       image: TSP,
       description: {
         first:
@@ -110,7 +115,7 @@ const content = {
     },
     {
       image: Portfolio,
-      title: "Porfolio",
+      title: "Portfolio",
       link: "https://samarthnehe.netlify.app/",
       description:
         "Hehe, This is the website that you are currently on! My personal website built with React and designed on Figma by me.",
@@ -120,14 +125,14 @@ const content = {
       title: "Eagr",
       link: "https://eagr.netlify.app/blogs",
       description:
-        "Eagr is a community of people who are on their journey of creating the best possible career for themselves.",
+        "Eagr is a community of people who are on their journey of creating the best possible career for themselves.Built using ReactJS",
     },
     {
       image: Crypto,
       title: "CryptO Roulette",
       link: "https://hackulus-6d620.web.app/",
       description:
-        "A hack winning project! (bucket list lol). Website that provides features like risk-authentication, malware detection, randomised encrypiton!",
+        "A hack winning project! (bucket list lol). Website that provides features like risk-authentication, malware detection, randomised encrypiton! Developed using React and Node. Designed in Figma",
     },
     {
       image: CUBE2,

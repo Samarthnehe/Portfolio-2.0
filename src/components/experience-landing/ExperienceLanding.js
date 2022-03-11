@@ -14,7 +14,10 @@ function ExperienceLanding() {
           {content.experiences.map((experience, index) => {
             return (
               <motion.div whileHover={{ scale: 1.05 }} key={index}>
-                <div className="experience">
+                <div
+                  className="experience"
+                  onClick={() => window.open(`${experience.link}`, "_blank")}
+                >
                   <div
                     className="company-logo"
                     style={{ backgroundImage: `url(${experience.image})` }}

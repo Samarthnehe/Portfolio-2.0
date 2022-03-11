@@ -1,32 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
-:root{
-  --primary:rgb(136,96,208);
-  --darkGray:#444242;
-  --text:#474747;
-  --black:black;
-  --span:rgb(87, 87, 87);
-  --white:white;
-  --background:#FAFAFA;
-  --logo:'../../images/logo.png';
-  --border:rgb(229,231,235);
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --primary: rgb(136, 96, 208);
+  --darkGray: #444242;
+  --text: #474747;
+  --black: black;
+  --span: rgb(87, 87, 87);
+  --white: white;
+  --background: #fafafa;
+  --logo: "../../images/logo.png";
+  --border: rgb(229, 231, 235);
+  --scroll: black;
+  --boxShadow: 5, 5, 5;
 }
-[data-theme='dark']{
-  --primary:rgb(136,96,208);
-  --darkGray:#FAFAFA;
-  --text:#dadada;
-  --black:white;
-  --white:black;
-  --span:rgb(175, 175, 175);
-  --background:rgb(15, 15, 15);
-  --logo:'../../images/logo-dark.png';
-  --border:rgb(26,24,20);
+[data-theme="dark"] {
+  --primary: rgb(136, 96, 208);
+  --darkGray: #fafafa;
+  --text: #dadada;
+  --black: white;
+  --white: black;
+  --span: rgb(175, 175, 175);
+  --background: rgb(15, 15, 15);
+  --logo: "../../images/logo-dark.png";
+  --border: rgb(39, 39, 39);
+  --scroll: white;
+  --boxShadow: 42, 42, 42;
 }
-*{
-  margin:0;
-  padding:0;
-  font-family: 'Josefin Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 120%;
-  
 }
 ::-webkit-scrollbar {
   width: 10px;

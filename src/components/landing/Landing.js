@@ -1,9 +1,9 @@
 import React from "react";
 import "./Landing.css";
 import SocialMedia from "../social_media/SocialMedia";
-import content from '../../lib/content'
+import content from "../../lib/content";
 
-function Landing({theme}) {
+function Landing({ theme }) {
   return (
     <div className="landing">
       <div className="landing-left">
@@ -12,14 +12,13 @@ function Landing({theme}) {
             <h1>Welcome! I am</h1>
           </div>
           <h1
-          className={theme==='dark'?"flickerHeader":''}
+            className={theme === "dark" ? "flickerHeader" : ""}
             style={{
               fontSize: "58px",
               fontWeight: "700",
-              padding: "30px 0px 5px 0px",
+              padding: "30px 0px 10px 0px",
               lineHeight: "64px",
               color: "var(--black)",
-              
             }}
           >
             Samarth Nehe

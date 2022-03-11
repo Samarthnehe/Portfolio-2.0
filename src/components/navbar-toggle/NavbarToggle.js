@@ -8,8 +8,7 @@ function NavbarToggle() {
 
   const handleToggleClose = () => {
     var SideBar = document.getElementById("sidebar");
-    SideBar.style.width = "0vw";
-    SideBar.style.padding = "0px";
+    SideBar.style.height = "0vh";
   };
 
   return (

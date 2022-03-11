@@ -75,6 +75,7 @@
 .landing-content .landing-para {
   line-height: 1.25em;
   font-size: 16px;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 900px) {
   .landing-right {
@@ -106,7 +107,7 @@
     font-size: 20px !important;
   }
   .landing-content .landing-para {
-    padding: 30px 30px !important;
+    padding: 30px 20px !important;
     text-align: center;
   }
 }

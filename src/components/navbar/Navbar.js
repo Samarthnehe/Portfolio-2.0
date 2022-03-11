@@ -6,15 +6,11 @@ import MenuIcon from "@mui/icons-material/Menu";
 import NavbarToggle from "../navbar-toggle/NavbarToggle";
 import Logo from "../../images/logo.png";
 import LogoDark from "../../images/logo-dark.png";
-import useLocalStorage from "use-local-storage";
 
 function Navbar({ switchTheme, theme }) {
-  var currLocation = window.location.href;
   const handleToggle = () => {
     var SideBar = document.getElementById("sidebar");
-    SideBar.style.padding = "10%";
-
-    SideBar.style.width = "80vw";
+    SideBar.style.height = "100vh";
   };
   const [currPage, setCurrPage] = useState("");
 
@@ -29,11 +25,11 @@ function Navbar({ switchTheme, theme }) {
       <div className="navbar">
         {theme === "dark" ? (
           <Link1 to="/" onClick={() => handleClick("")}>
-            <img src={LogoDark} width="135px" height="55px" />
+            <img src={LogoDark} alt="logo" width="135px" height="55px" />
           </Link1>
         ) : (
           <Link1 to="/" onClick={() => handleClick("")}>
-            <img src={Logo} width="135px" height="55px" />
+            <img src={Logo} alt="logo" width="135px" height="55px" />
           </Link1>
         )}
         <div className="dark-toggle-mobile" onClick={switchTheme}>
@@ -96,15 +92,7 @@ function Navbar({ switchTheme, theme }) {
             onClick={() => handleClick("projects")}
             to="/projects"
           >
-            <p
-              style={{
-                color:
-                  (currPage === "") | (currPage === "projects")
-                    ? "white"
-                    : "var(--black)",
-              }}
-              className=""
-            >
+            <p className={currPage === "" ? "navlinks" : "navlinks navblack"}>
               Projects
             </p>
           </Link1>
@@ -113,15 +101,7 @@ function Navbar({ switchTheme, theme }) {
             onClick={() => handleClick("experience")}
             to="/experience"
           >
-            <p
-              style={{
-                color:
-                  (currPage === "") | (currPage === "experience")
-                    ? "white"
-                    : "var(--black)",
-              }}
-              className=""
-            >
+            <p className={currPage === "" ? "navlinks" : "navlinks navblack"}>
               Experience
             </p>
           </Link1>
@@ -131,15 +111,7 @@ function Navbar({ switchTheme, theme }) {
             spy={true}
             smooth={true}
           >
-            <p
-              style={{
-                color:
-                  (currPage === "") | (currPage === "contact")
-                    ? "white"
-                    : "var(--black)",
-              }}
-              className=""
-            >
+            <p className={currPage === "" ? "navlinks" : "navlinks navblack"}>
               Contact
             </p>
           </Link2>
