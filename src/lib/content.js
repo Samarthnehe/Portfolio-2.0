@@ -202,12 +202,26 @@ const content = {
     first:
       "Hi I'm Samarth Nehe! I am a final year B.Tech student pursuing Computer Science and Engineering from VIT Vellore with a CGPA of .. eh! nevermind.",
     second:
-      "I am primarily a frontend Web-Developer and UI Designer! In the past 3 years I have worked with React, Next, Node, MongoDB, GraphQl, AWS, Figma and UI/UX. Presently I m learning TypeScript and React Native. Also I am well versed with Python.",
+      "I am primarily a frontend Web-Developer and UI Designer! In the past 3 years I have worked with React, Node, MongoDB, GraphQl, AWS, Figma and UI/UX. Getting my hands dirty over TypeScript and React Native. Not much into backend, but I am spending some time learning Go. Also I am well versed with Python.",
     third:
       "Apart from Academics I am also a Speedcuber that makes me mention myself as the Co-Founder and Former-Chairperson of C.U.B.E VIT. I like to sing, play guitar and sketch at times!",
   },
   intro: {
     text: "Firstly, thanks for landing here, much appreciated! Need not tell my name here, it's written up there in BIG fonts! Just a small introduction, I am a geek still trying to figure out what to do in life! which then makes me work with various types of webtechnologies and languges. SCROLL DOWN for more!",
+  },
+  researchPaper: {
+    kicker: "RESEARCH PAPER",
+    heading: "CryptO’Roulette - A Smart Approach To Modern Encryption",
+    journal:
+      "International Journal of Engineering and Advanced Technology (IJEAT)",
+    authors: [
+      "Samarth Nehe",
+      "Varun Mishra",
+      "Atharva Gulhane",
+      "P.G.V SaiKarthik",
+      "Navyaa Sharma",
+    ],
+    link: "https://www.ijeat.org/portfolio-item/b33111211221/",
   },
 };
 

@@ -11,6 +11,9 @@
   --border: rgb(229, 231, 235);
   --scroll: black;
   --boxShadow: 5, 5, 5;
+  --grey2: #555555;
+  --grey3: #7f7f7f;
+  --grey4: #d4d4d4;
 }
 [data-theme="dark"] {
   --primary: rgb(136, 96, 208);
@@ -19,11 +22,14 @@
   --black: white;
   --white: black;
   --span: rgb(175, 175, 175);
-  --background: rgb(15, 15, 15);
+  --background: rgb(30, 30, 30);
   --logo: "../../images/logo-dark.png";
   --border: rgb(39, 39, 39);
   --scroll: white;
   --boxShadow: 42, 42, 42;
+  --grey2: #d2d0d0;
+  --grey3: #d2d0d0;
+  --grey4: ##d4d4d4;
 }
 * {
   margin: 0;
