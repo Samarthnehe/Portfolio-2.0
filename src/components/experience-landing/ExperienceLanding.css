@@ -58,6 +58,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.experience-grid .experience .company-name{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10%;
+  margin-bottom: 10px;
+}
+.experience-grid .experience .company-name .exp-type{
+  background-color: rgb(255, 255, 0);
+  padding: 4px 10px;
+  color: black;
+  border-radius: 4px;
+  margin-left: 20px;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+}
 .experience-grid .experience:hover {
   background-color: rgb(136, 96, 208, 0.2);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
@@ -67,8 +84,6 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--darkGray);
-  margin-bottom: 10px;
-  margin-top: 10%;
 }
 .experience-grid .experience p {
   font-size: 18px;
@@ -95,5 +110,13 @@
     width: 75px;
     right: 10px;
     top: -37.5px;
+  }
+  .experience-grid .experience .company-name{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .experience-grid .experience .company-name .exp-type{
+    margin-left: 0;
+    margin-bottom: 5px;
   }
 }

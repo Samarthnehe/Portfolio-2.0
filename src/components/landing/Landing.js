@@ -1,7 +1,7 @@
-import React from "react";
-import "./Landing.css";
-import SocialMedia from "../social_media/SocialMedia";
-import content from "../../lib/content";
+import React from 'react';
+import './Landing.css';
+import SocialMedia from '../social_media/SocialMedia';
+import content from '../../lib/content';
 
 function Landing({ theme }) {
   return (
@@ -12,13 +12,13 @@ function Landing({ theme }) {
             <h1>Welcome! I am</h1>
           </div>
           <h1
-            className={theme === "dark" ? "flickerHeader" : ""}
+            className={theme === 'dark' ? 'flickerHeader' : ''}
             style={{
-              fontSize: "58px",
-              fontWeight: "700",
-              padding: "30px 0px 10px 0px",
-              lineHeight: "64px",
-              color: "var(--black)",
+              fontSize: '58px',
+              fontWeight: '700',
+              padding: '30px 0px 10px 0px',
+              lineHeight: '64px',
+              color: 'var(--black)',
             }}
           >
             Samarth Nehe
@@ -26,18 +26,17 @@ function Landing({ theme }) {
           <p
             className="landing-para1"
             style={{
-              fontSize: "22px",
-              fontWeight: "500",
-              color: "var(--darkGray)",
+              fontSize: '22px',
+              fontWeight: '500',
+              color: 'var(--darkGray)',
             }}
           >
-            Website Developer and{" "}
-            <span style={{ color: "rgb(136,96,208" }}>Designer</span>
+            User Interface Developer and{' '}
+            <span style={{ color: 'rgb(136,96,208' }}>
+              {"<Designer />"}
+            </span>
           </p>
-          <p
-            className="landing-para"
-            style={{ padding: "40px 0px", color: "var(--text)" }}
-          >
+          <p className="landing-para" style={{ padding: '40px 0px', color: 'var(--text)' }}>
             {content.intro.text}
           </p>
           <SocialMedia />
@@ -46,9 +45,8 @@ function Landing({ theme }) {
       <div className="landing-right">
         <div
           style={{
-            height: "200px",
-            backgroundImage:
-              "linear-gradient(to bottom,rgb(0,0,0,1) -30% ,transparent 100%)",
+            height: '200px',
+            backgroundImage: 'linear-gradient(to bottom,rgb(0,0,0,1) -30% ,transparent 100%)',
           }}
         >
           .
